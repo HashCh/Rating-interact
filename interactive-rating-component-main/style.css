@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: var(--White);
+}
+
+p {
+    color: var(--Light-Grey);
+    line-height: 1.8;
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Overpass", sans-serif;
+    min-height: 100vh;
+    font-size: 15px;
+}
+
+
+
+.submit {
+    font-family: inherit;
+    border-radius: 25px;
+    color: var(--White);
+    background-color: var(--Orange);
+    padding: 10px;
+    border: none;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+
+.submit:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+
+}
+
+
+
+
+.front,
+.back {
+    max-width: 400px;
+    background-color: var(--Dark-Blue);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px;
+    border-radius: 25px;
+
+}
+
+.p {
+    text-align: center;
+    color: var(--Light-Grey);
+    line-height: 1.8;
+}
+
+.back {
+    align-items: center;
+}
+
+
+.img {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: hsl(213, 17%, 26%);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+
+
+
+
+.numbers {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.number {
+
+
+    border-radius: 50%;
+    color: var(--White);
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: hsl(213, 17%, 26%);
+}
+
+.hidden {
+    display: none;
+}
+
+.number:hover {
+    background-color: var(--Orange);
+
+}
+
+.number:focus {
+    background-color: hsl(217, 12%, 63%);
+}
+
+
+.numbers li {
+    list-style: none;
+
+}
+
+.tnhkyouimg {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+
+}
+
+.msg {
+    color: var(--Orange);
+    background-color: hsl(213, 17%, 26%);
+
+    border-radius: 25px;
+    padding: 0.5rem;
+
+
+}
