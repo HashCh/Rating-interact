@@ -32,6 +32,15 @@ body {
     font-family: "Overpass", sans-serif;
     min-height: 100vh;
     font-size: 15px;
+    perspective: 800px;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+
 }
 
 
@@ -55,20 +64,26 @@ body {
     background-color: var(--White);
 
 }
+.box.transformed{
+    transform: rotatey(-180deg);
+   
+
+}
 
 
 
 
-.front,
-.back {
-    max-width: 400px;
+.face {
+    width: 100% ;
     background-color: var(--Dark-Blue);
-    height: 400px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 35px;
     border-radius: 25px;
+    position: absolute;
+    backface-visibility: hidden;
 
 }
 
@@ -80,6 +95,7 @@ body {
 
 .back {
     align-items: center;
+    transform: rotateY(180deg);
 }
 
 
